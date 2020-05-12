@@ -1,0 +1,126 @@
+Source: qtscxml-everywhere-src
+Section: libs
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Scarlett Moore <sgmoore@kde.org>,
+           Dmitry Shachnev <mitya57@debian.org>,
+           Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Build-Depends: debhelper (>= 11),
+               pkg-kde-tools,
+               qtbase5-dev (>= 5.12.8+dfsg~),
+               qtbase5-private-dev (>= 5.12.8+dfsg~),
+               qtdeclarative5-dev (>= 5.12.8~),
+               qtdeclarative5-private-dev (>= 5.12.8~),
+               xauth,
+               xvfb
+Build-Depends-Indep: doc-base,
+                     qtbase5-doc-html (>= 5.12.8+dfsg~) <!nodoc>,
+                     qtdeclarative5-doc-html (>= 5.12.8~) <!nodoc>,
+                     qttools5-dev-tools (>= 5.12.8~) <!nodoc>
+Standards-Version: 4.4.1
+Homepage: https://doc.qt.io/qt-5/qtscxml-index.html
+Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtscxml.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtscxml
+
+Package: libqt5scxml5-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libqt5scxml5 (= ${binary:Version}), qtbase5-dev, ${misc:Depends}
+Description: Qt module for creating state machines from SCXML files development
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package contains the development files for qtscxml.
+
+Package: libqt5scxml5-bin
+Architecture: any
+Section: utils
+Multi-Arch: foreign
+Depends: libqt5scxml5 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Description: Qt module for creating state machines from SCXML files helper
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package contains the helper binary for qtscxml.
+
+Package: libqt5scxml5
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt module for creating state machines from SCXML files library
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+
+Package: qml-module-qtscxml
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt scxml QML module
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package provides a QML module for Qt scxml.
+
+Package: qtscxml5-examples
+Section: x11
+Architecture: any
+Multi-Arch: same
+Depends: qml-module-qtscxml, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt SCXML examples
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package contains Qt 5 SCXML examples.
+
+Package: qtscxml5-doc
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt SCXML QCH documentation
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package contains the documentation in QCH format, which can be
+ viewed using Qt Assistant from qttools5-dev-tools package.
+
+Package: qtscxml5-doc-html
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt SCXML HTML documentation
+ The Qt SCXML module provides functionality to create state
+ machines from SCXML files. This includes both dynamically
+ creating state machines (loading the SCXML file and instantiating
+ states and transitions) and generating a C++ file that has a class
+ implementing the state machine. It also contains functionality
+ to support data models and executable content.
+ .
+ This package contains the documentation in HTML format.

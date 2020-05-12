@@ -1,0 +1,41 @@
+qtscxml-everywhere-src (5.12.8-0ubuntu1) focal; urgency=medium
+
+  * New upstream bugfix release.
+  * Bump Qt build-dependencies to 5.12.8.
+  * Update debian/libqt5scxml5.symbols from 5.12.5 riscv64 log.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 10 Apr 2020 15:16:46 +0300
+
+qtscxml-everywhere-src (5.12.5-2build1) focal; urgency=medium
+
+  * No-change rebuild for libgcc-s1 package name change.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 23 Mar 2020 07:23:56 +0100
+
+qtscxml-everywhere-src (5.12.5-2) unstable; urgency=medium
+
+  * Update debian/libqt5scxml5.symbols from armel log.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 21 Oct 2019 19:24:07 +0300
+
+qtscxml-everywhere-src (5.12.5-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Improve the doc-base file.
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.12.5.
+  * Update debian/libqt5scxml5.symbols from buildds’ logs.
+  * Add myself and Lisandro to Uploaders.
+  * Bump Standards-Version to 4.4.1, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 18 Oct 2019 12:53:10 +0300
+
+qtscxml-everywhere-src (5.12.2-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Initial release (Closes: #880516)
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 14 Apr 2019 10:17:18 +0300

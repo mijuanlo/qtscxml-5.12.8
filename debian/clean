@@ -1,0 +1,13 @@
+config.summary
+doc/qtscxml/
+doc/qtscxml.qch
+qml/QtScxml/plugins.qmltypes
+qml/QtScxml/qmldir
+src/scxml/codeattributions.qdoc
+src/scxml/qtscxml-config.h
+src/scxml/qtscxml-config_p.h
+src/scxml/qtscxml-config.pri
+src/scxml/QtScxml.version.in
+tests/auto/scion/scion.qrc
+tests/auto/scion/scxml/compiled_tests.h
+tests/auto/scion/scxml/scion.h

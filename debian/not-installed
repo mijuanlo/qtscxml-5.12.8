@@ -1,0 +1,3 @@
+usr/include/*/qt5/QtScxml/5.*
+usr/lib/*/libQt5Scxml.la
+usr/lib/*/qt5/mkspecs/modules/qt_lib_scxml_private.pri
